@@ -24,7 +24,8 @@ async function Signup() {
     xhr.onreadystatechange = function () {
     if (xhr.readyState === 4 && xhr.status === 200) {
         console.log(xhr.responseText)
-        if (xhr.responseText == "0") alert("User already exists")
+        if (xhr.responseText == "0") {alert("User already exists"); location.reload()}
+        else if (xhr.responseText == "1") {alert("User " + username + " was successfully created"); location.reload()}
         }
     };
 
