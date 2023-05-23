@@ -1,0 +1,170 @@
+body{
+  margin: 0;
+  padding: 0;
+  display: flex;
+  min-height: 100vh;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  background: #0D1821;
+}
+.navMenu {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  
+  .navMenu a {
+    color: #f6f4e6;
+    text-decoration: none;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 500;
+    display: inline-block;
+    width: 250px;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .navMenu a:hover {
+    color: #FFDCB6;
+  }
+
+  .userMenu {
+    color: white;
+    position: absolute;
+    right: 0;
+    margin: 20px;
+  }
+  
+  .button{
+    width: 100%;
+    height: 20px;
+    margin: 5px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #344966;
+    font-size: .8em;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+  }
+  .button:hover{
+    background: #40597D;
+  }
+
+  .square {
+    width: 10%;
+    height: 0;
+    padding-top: 10%;
+    background-size: 100% 100%;
+    margin: auto;
+    border-radius: 5%;
+    text-align: center;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    box-shadow: 5px 20px 50px #000000;
+
+  }
+
+  .square:hover{
+    transition: .3s;
+    transform: scale(1.1);
+  }
+
+  .modal {
+    margin: auto;
+    display: none;
+    position: fixed;
+    z-index: 1;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+  }
+  
+  .modal-content {
+    display: block;
+    margin: auto;
+    max-width: 40%;
+    max-height: 40%;
+    border-radius: 5%;
+  }
+  
+  #caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+  }
+  
+  .modal-content, #caption {  
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+  }
+  
+  @-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+  }
+  
+  @keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+  }
+  
+  .close {
+    position: absolute;
+    top: 15px;
+    right: 35px; 
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .cartbutton{
+    width: 300px;
+    height: 30px;
+    margin: 5px auto;
+    justify-content: center;
+    display: block;
+    color: #fff;
+    background: #344966;
+    font-size: .8em;
+    font-weight: bold;
+    margin-top: 5px;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    transition: .2s ease-in;
+    cursor: pointer;
+  }
+
+  .cartbutton:hover{
+    background: #40597D;
+  }

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Singup and login</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/sign.css">
+    <script src = "/static/javascript/sign.js"></script>
+
+</head>
+<body>
+    <nav class="navMenu">
+        <a href="index.html">Home</a>
+        <a href="sign.html" style="color: #FF7700">Signup and login</a>
+        <div class="dot"></div>
+      </nav>
+	<div class="main">  	
+		<input type="checkbox" id="chk" aria-hidden="true">
+
+			<div class="signup">
+				<form onsubmit="return false">
+					<label for="chk" aria-hidden="true">Sign up</label>
+					<input type="text" name="txt" placeholder="User name" required="" id="Signup_Username">
+					<input type="email" name="email" placeholder="Email" required="" id="Signup_Email">
+					<input type="password" name="pswd" placeholder="Password" required="" id="Signup_Password">
+					<button onclick="Signup()">Sign up</button>
+				</form>
+			</div>
+
+			<div class="login">
+				<form onsubmit="return false">
+					<label for="chk" aria-hidden="true">Login</label>
+					<input type="text" name="txt" placeholder="Username" required="" id="Login_Username">
+					<input type="password" name="pswd" placeholder="Password" required="" id="Login_Password">
+					<button onclick="Login()">Login</button>
+				</form>
+			</div>
+	</div>
+</body>
+</html>

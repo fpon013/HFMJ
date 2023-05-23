@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Orders</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/orders.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/cart.css">
+  <script src = "/static/javascript/home.js"></script>
+</head>
+<body id="body" onload="loadUsername(), getOrders(), cartValue()">
+    <nav class="navMenu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="shop.html">Shop</a>
+      <a href="orders.html" style="color: #FF7700">orders</a>
+    </nav>
+    <div class="userMenu" id="userMenu">
+      <label id="User"></label>
+      <button onclick="logout()" class="button" id="logout_button">Logout</button>
+      <img src="/static/images/scart.png" onclick="openCart()" class="carticon"></img>
+    </div>
+
+    <div class="container">
+      <table>
+        <thead>
+          <tr>
+            <td>Order ID</td>
+            <td>Order Date</td>
+            <td>Product ID</td>
+            <td>Product Name</td>
+          </tr>
+        </thead>
+        <tbody id="tbody">
+
+        </tbody>
+      </table>
+    </div>
+
+    <div id ="CartModal" class="modal">
+    </div>
+
+
+</body>
+</html>

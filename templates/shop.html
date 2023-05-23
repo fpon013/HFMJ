@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shop</title>
+	<link rel="stylesheet" type="text/css" href="/static/css/shop.css">
+  <link rel="stylesheet" type="text/css" href="/static/css/cart.css">
+  <script src = "/static/javascript/home.js"></script>
+</head>
+<body id="body" onload="loadUsername(), cartValue()">
+    <nav class="navMenu" id="navMenu">
+      <a href="index.html">Home</a>
+      <a href="shop.html" style="color: #FF7700">Shop</a>
+      <a href="orders.html">orders</a>
+    </nav>
+    <div class="userMenu" id="userMenu">
+      <label id="User"></label>
+      <button onclick="logout()" class="button" id="logout_button">Logout</button>
+      <img src="/static/images/scart.png" onclick="openCart()" class="carticon"></img>
+    </div>
+
+    <div id="1" class="square" style="background-image:  url('/static/images/car1.png');" onclick="openItem(this.id)">
+      Ferrari
+    </div>
+    <div id="2" class="square" style="background-image:  url('/static/images/car2.png');" onclick="openItem(this.id)">
+      Pagani
+    </div>
+    <div id ="3" class="square" style="background-image:  url('/static/images/car3.png');" onclick="openItem(this.id)">
+      Mustang
+    </div>
+    <div id ="4" class="square" style="background-image:  url('/static/images/car4.png');" onclick="openItem(this.id)">
+      Aston Martin
+    </div>
+    
+    <div id="ItemModal" class="modal">
+      <img class="modal-content" id="img01">
+      <span class="close" onclick="closeItem()">&times;</span>
+      <div id="caption"></div>
+      <button class="cartbutton" onclick="addCart()">Add to cart</b>
+    </div>
+
+    <div id ="CartModal" class="modal">
+    </div>
+
+
+</body>
+</html>
+
+<a href="https://www.flaticon.com/free-icons/smart-cart" title="smart-cart icons" hidden="true">Smart-cart icons created by Freepik - Flaticon</a>
+<a href="https://www.flaticon.com/free-icons/ui" title="ui icons" hidden="true">Ui icons created by vectaicon - Flaticon</a>
