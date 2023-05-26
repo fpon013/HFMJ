@@ -12,6 +12,8 @@ async function Signup() {
     var data = {};
     let username = document.getElementById("Signup_Username").value
     let email = document.getElementById("Signup_Email").value
+    if (!email.includes("@") || !email.includes(".")) {alert("Wrong email format"); return false}
+    if (document.getElementById("Signup_Password").value.length < 6) {alert("Please enter a password with at least 6 characters"); return false}
     let password = await sha256(document.getElementById("Signup_Password").value)
     data.username = username;
     data.email = email;
